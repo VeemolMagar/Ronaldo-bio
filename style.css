@@ -1,0 +1,205 @@
+:root {
+  --shadow:
+    5px 5px 5px rgba(12, 12, 12, 0.269), 10px 11px 12px rgba(14, 14, 14, 0.388);
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 14px 20px;
+  float: right;
+  background-color: #e0e0e0;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  box-shadow:
+    8px 8px 16px #bebebe,
+    -8px -8px 16px #ffffff;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow:
+    inset 8px 8px 16px #bebebe,
+    inset -8px -8px 16px #ffffff;
+}
+
+.hero {
+  height: 95vh;
+  position: relative;
+}
+.hero video {
+  filter: grayscale(0.4);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgba(69, 66, 66, 0.352);
+  width: 500px;
+  top: 35vh;
+  left: 20vw;
+  padding: 1rem;
+  border-radius: 10px;
+  color: orange;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow:
+    5px 5px 5px rgba(12, 12, 12, 0.269),
+    10px 11px 12px rgba(14, 14, 14, 0.388);
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.706);
+  color: orange;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: o.5rem 0;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  color: red;
+  transition: all 0.5s;
+}
+
+[class^="img"] {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 {
+  background: url(https://www.rollingstone.com/wp-content/uploads/2018/06/rs-cristiano-ronaldo-5ebcf9f5-5a0d-4761-ae8c-cce86eaf775e.jpg?w=1401&h=879&crop=1)
+    no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img2 {
+  background: url(./assets/d.jpeg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.latest {
+  padding: 1rem 0;
+}
+main {
+  display: flex;
+  gap: 1rem;
+}
+
+.articles {
+  width: 66%;
+}
+article {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: var(--shadow);
+  background-color: #e0e0e0;
+  gap: 16px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  padding: 20px 16px;
+  box-shadow:
+    5px 5px 5px rgba(12, 12, 12, 0.269),
+    10px 11px 12px rgba(14, 14, 14, 0.388);
+}
+article .art-img {
+  width: 350px;
+}
+
+.side-links {
+  width: 34%;
+}
+.country {
+  background-color: rgba(171, 196, 121, 0.863);
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow);
+  box-shadow:
+    5px 5px 5px rgba(12, 12, 12, 0.269),
+    10px 11px 12px rgba(14, 14, 14, 0.388);
+}
+.date {
+  background-color: rgba(206, 198, 99, 0.863);
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow);
+}
+
+/* <!-- recomendation --> */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  width: 250px;
+  box-shadow: var(--shadow);
+  background: #e0e0e0;
+  padding-bottom: 32px;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+.card img {
+  border-radius: 10px 10px 0 0;
+}
+.card .btn {
+  width: 100%;
+}
+/* <!-- subscribe section --> */
+
+.subs {
+  padding: 32px 0;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.subs input {
+  line-height: 42px;
+  padding: 5px 10px;
+  border: 1px solid rgba(126, 128, 122, 0.42);
+  border-radius: 5px;
+}
+/* <!-- footer --> */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 64px;
+  margin-top: 32px;
+}
